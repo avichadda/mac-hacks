@@ -42,6 +42,10 @@ This creates:
 - `dist/Mac Hacks.app`
 - `dist/Mac Hacks-1.0.0.dmg`
 
+The DMG build generates a branded app icon and a custom drag-to-Applications
+installer window. The artwork is generated locally by
+`scripts/generate-dmg-assets.swift`.
+
 The default build uses ad-hoc signing, which is suitable for local testing. To
 share the app without macOS Gatekeeper warnings, sign it with an Apple
 Developer ID certificate:
